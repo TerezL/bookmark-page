@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+*{
+    font-family: "Rubik", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.picture{
+    position: relative;
+   
+}
+.picture::after{
+    position: absolute;
+    content: "";
+    background-color: hsl(231, 69%, 60%);
+    border-bottom-left-radius: 10rem;
+    width: 100%;
+    height: 35%;
+    display: block;
+    top: 9rem;
+    right: -10rem;
+    z-index: -1;
+}
+.feat-bg{
+    position: relative;
+}
+.feat-bg::after{
+    position: absolute;
+    content: "";
+    background-color: hsl(231, 69%, 60%);
+    border-bottom-right-radius: 15rem;
+    border-top-right-radius: 15rem;
+    width: 100%;
+    height: 35%;
+    display: block;
+    top: 9rem;
+    left: -10rem;
+    z-index: -1;
+}
+
+@media screen and (min-width: 48rem){
+    .picture::after{
+    position: absolute;
+    content: "";
+    background-color: hsl(231, 69%, 60%);
+    border-bottom-left-radius: 15rem;
+    width: 60%;
+    height: 70%;
+    display: block;
+    top: 10rem;
+    right: -20rem;
+    z-index: -1;
+}
+.feat-bg::after{
+    position: absolute;
+    content: "";
+    background-color: hsl(231, 69%, 60%);
+    border-bottom-right-radius: 15rem;
+    border-top-right-radius: 15rem;
+    width: 60%;
+    height: 70%;
+    display: block;
+    top: 9rem;
+    left: -20rem;
+    z-index: -1;
+}
+
+}
+
