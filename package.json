@@ -1,4 +1,5 @@
 {
+  "homepage": "TerezL.github.io/bookmark-page",
   "name": "bookmark-page",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -15,6 +18,7 @@
     "@tailwindcss/vite": "^4.2.2",
     "@tailwindplus/elements": "^1.0.22",
     "david-ai": "^1.0.6",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.2"
