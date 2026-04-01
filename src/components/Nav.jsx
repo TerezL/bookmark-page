@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import images from '../../dist/assets/images';
+import images from '../assets/images'
 
 const navigation = [
   { name: 'FEATURES', href: '#', current: false },

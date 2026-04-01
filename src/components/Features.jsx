@@ -1,6 +1,6 @@
 import { initDavidAI } from 'david-ai';
 import { useState, useRef, useEffect } from 'react';
-import images from '../../dist/assets/images';
+import images from '../assets/images';
 
 function Features(){
     const [activeTab, setActiveTab] = useState('tab1-group4');

@@ -1,4 +1,4 @@
-import images from '../../dist/assets/images';
+import images from "../assets/images";
 
 function Extensions() {
   return (
