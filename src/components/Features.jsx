@@ -1,5 +1,6 @@
 import { initDavidAI } from 'david-ai';
 import { useState, useRef, useEffect } from 'react';
+import images from '../assets/images';
 
 function Features(){
     const [activeTab, setActiveTab] = useState('tab1-group4');
@@ -88,7 +89,7 @@ function Features(){
   <div className="mt-4 tab-content-container w-[70%] m-auto feat-bg">
     <div id="tab1-group4" className={`tab-content text-sm flex flex-col md:flex-row items-center gap-10 ${activeTab === 'tab1-group4' ? '' : 'hidden'}`}>
       
-      <img src='\src\assets\images\illustration-features-tab-1.svg' alt='img1'></img>
+      <img src={images['illustration-features-tab-1.svg']} alt='img1'></img>
       <div className="flex flex-col gap:5 m-auto">
       <h2 className='text-center md:text-left text-3xl'>Bookmark in one click</h2>
       <p className='text-center md:text-left text-neutral-400 my-3'>Organize your bookmarks however you like. Our simple drag-and-drop
@@ -97,7 +98,7 @@ function Features(){
     </div>
     </div>
     <div id="tab2-group4" className={`tab-content text-sm flex flex-col md:flex-row items-center gap-10 ${activeTab === 'tab2-group4' ? '' : 'hidden'}`}>
-      <img src='\src\assets\images\illustration-features-tab-2.svg' alt='img2'></img>
+      <img src={images['illustration-features-tab-2.svg']} alt='img2'></img>
       <div className="flex flex-col m-auto">
       <h2 className='text-center md:text-left text-3xl'>Intelligent search</h2>
       <p className='text-center md:text-left text-neutral-400 my-3'>Our powerful search feature will help you find 
@@ -106,7 +107,7 @@ function Features(){
     </div>
     </div>
       <div id="tab3-group4" className={`tab-content text-sm flex flex-col md:flex-row items-center gap-10 ${activeTab === 'tab3-group4' ? '' : 'hidden'}`}>
-      <img src='\src\assets\images\illustration-features-tab-3.svg' alt='img3'></img>
+      <img src={images['illustration-features-tab-3.svg']} alt='img3'></img>
       <div className="flex flex-col m-auto">
       <h2 className='text-center md:text-left text-3xl'>Share your bookmarks</h2>
       <p className='text-center md:text-left text-neutral-400 my-3'>Easily share your bookmarks and collections with others. Create a 

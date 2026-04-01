@@ -1,8 +1,9 @@
+import images from '../assets/images';
 function Intro(){
     return(
         <>
             <div className="my-10 grid grid-cols-1 md:grid-cols-2 w-[90%] m-auto picture">
-                <img src="\src\assets\images\illustration-hero.svg" alt="hero" className="md:order-2"/>
+                <img src={images['illustration-hero.svg']} alt="hero" className="md:order-2"/>
                 <div className="flex flex-col justify-center my-10 mx-auto md:p-20">
                 <h1 className="text-center font-medium text-5xl md:text-left">A Simple Bookmark Manager</h1>
                 <p className="px-20 py-5 text-center text-neutral-400 md:text-left md:px-[0]">A clean and simple interface to organize your favourite website.

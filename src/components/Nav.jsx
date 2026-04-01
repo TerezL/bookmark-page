@@ -1,5 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import images from '../assets/images';
 
 const navigation = [
   { name: 'FEATURES', href: '#', current: false },
@@ -31,7 +32,7 @@ function Nav() {
             
               <img
                 alt="Your Company"
-                src="\src\assets\images\logo-bookmark.svg"
+                src={images['logo-bookmark.svg']}
                 className="h-8 w-auto"
               />
             </div>
